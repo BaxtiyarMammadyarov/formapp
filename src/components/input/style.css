@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+.inputCom,.inputCom  input {
+background-color: azure;
+
+
+}
+.checkbox{
+    transform: scale(1.5);
+}
+
+
+.inputCom label{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   padding: 3px;
+    border: 1px solid floralwhite;
+    color: black;
+    text-align: center;
+    
+background-color: azure;
+
+}
+.inputCom label span{
+    
+background-color: azure;
+   
+    
+    margin: 10px;
+    border: 1px solid floralwhite;
+    color: black;
+ 
+    text-align: left;
+   
+
+}
+.divClass{
+   display: inline-block;
+   width: 100%;
+}
+
+.divClass label{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   padding: 3px;
+    border: 1px solid floralwhite;
+    color: black;
+    text-align: center;
+    
+background-color: azure;
+
+}
+.btn{
+    display: inline;
+    width: 50%;
+}
