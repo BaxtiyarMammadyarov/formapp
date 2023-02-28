@@ -1,11 +1,18 @@
 *{
     box-sizing: border-box;
 }
-
+.inputCom{
+    width: 100%;
+}
 .inputCom,.inputCom  input {
 background-color: azure;
 
 
+
+}
+.inputCom  input {
+    width: 60%;
+    margin: 5px;
 }
 .checkbox{
     transform: scale(1.5);
@@ -56,5 +63,6 @@ background-color: azure;
 }
 .btn{
     display: inline;
-    width: 50%;
+    margin: 10px;
+    width: 70%;
 }

@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	outline: none
+}
+.table2{
+	width: 100%;
+    border: 1px solid black;
+}
+.pd-10{
+	padding: 10px 0;
+}
+.pd-15{
+	padding: 10px 0 35px 0;
+}
+.table2{
+	/* width:52%;
+	margin: 0 165px;
+	border-collapse: collapse; */
+}
+th,td{
+	padding: 15px;
+}
+th{
+
+	background-color: var(--darkgray);	
+}
+.thead{
+    background-color: bisque;
+}
+
+.true_c{
+  background-color: antiquewhite;
+}
+.false_c{
+background-color: brown;
+}
+
+

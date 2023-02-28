@@ -2,31 +2,32 @@ import React from 'react'
 import "./style.css"
 function Input(props) {
  function   setFunction(e){
-    // console.log(e.target.name,e.target.value)
-    let data = {...props.itm.data}
+    const val = e.target.value; 
+    const name = e.target.name;   
+    let data = {...props.data}
     console.log(e.target.value )
-    if(e.target.name ==='isActive'){
+    if(name ==='isActive'){
         data[e.target.name] = e.target.checked 
     }
     else{
-        
-        data[e.target.name] = e.target.value   
+            data[name] =  val
     }
      
-        props.itm.setData(data)
+        props.setData(data)
     }
+    console.log(props.data[props.name])
     return (
-        <div className={props.itm.divClass} key={props.itm.id}>
-            <label htmlFor={props.itm.id}  >
+        <div className={props.divClass} key={props.id}>
+            <label htmlFor={props.id}  >
                 {
-                    (props.itm.name ? <span> {props.itm.name} : </span> : "")
+                    (props.name ? <span> {props.name} : </span> : "")
                 }
 
                 <input
-                    name={props.itm.name}
-                    type={props.itm.type}
-                    className={props.itm.class}
-                    value={props.itm.value}  
+                    name={props.name}
+                    type={props.type}
+                    className={props.class}
+                    value={props.data[props.name]} 
                     onChange = {(e)=>setFunction(e)}
                     />
             </label>
